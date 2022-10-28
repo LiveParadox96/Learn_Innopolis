@@ -1,0 +1,26 @@
+body{
+    background: -webkit-linear-gradient(left top, rgb(70, 207, 16) 0%, #8ef80256 100%);
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: rgb(146, 114, 114);
+}
+
+header{
+    color: rgb(102, 72, 72);
+    font-size: 24px;
+}
+
+h2{
+    color: rgba(148, 114, 50, 0.815);
+
+}
+p{
+    color: rgb(102, 72, 72);
+    font-size: 24px;
+}

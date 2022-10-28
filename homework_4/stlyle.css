@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    color: #6b3b24;
+    background-color: #98b999;
+    z-index: 1;
+}
+
+h1,h2{
+    display: flex;
+    justify-content: center;
+    color:#a33737;
+}
+
+main{
+    display: flex;
+}
+
+.location{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    row-gap: 10px; 
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.text_head{
+    margin: 0;
+    padding: 0;
+}
+
+.model_3,.model_s,.cibertruck{
+    display: grid;
+    width: 250px;
+    height: 300px;
+    background: rgb(230, 225, 225);
+    border: 5px solid rgba(0, 0, 0, 0.527);
+}
+
+.model_y{
+    display: grid;
+    width: 250px;
+    height: 300px;
+    background: rgb(230, 225, 225);
+    border: 5px solid rgba(0, 0, 0, 0.527);
+}
+
+.model_roadster{
+    width: 250px;
+    height: 300px;
+    background: rgb(230, 225, 225);
+    border: 5px solid gainsboro;
+}
+
+/* не получается поменять картинку, хоть добавлял её через CSS backround-image: путь верный. 
+.model_3_config:hover::before{
+    background-image: url(./photo/model_3_02.jpg);
+    width: 300px;
+} */
+
+.text_head{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.options_auto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow-y: scroll;
+}
+
+.options_auto_roadster{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+.configuration{
+    display: flex;
+    justify-content: space-between;
+    border: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b4a9a9;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(112, 89, 89); 
+}
+
+.price_model_3, .price_model_s, .price_cibertruck, .price_roadster, .price_model_y{
+    margin: 0;
+    padding: 0;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    color: rgb(48, 48, 66);
+}
+
+
+
+.price_model_3::before {
+    content: "Узнать цену";
+}
+
+.price_model_3:hover::before {
+    content: "от 5 000 000 рублей";
+}
+
+.price_model_s::before {
+    content: "Узнать цену";
+}
+
+.price_model_s:hover::before {
+    content: "от 15 500 000 рублей";
+}
+
+.price_cibertruck::before {
+    content: "Узнать цену";
+}
+
+.price_cibertruck:hover::before {
+    content: "от 4 000 000 рублей";
+}
+
+.price_roadster::before {
+    content: "Узнать цену";
+}
+
+.price_roadster:hover::before {
+    content: "от 25 000 000 рублей";
+}
+
+.price_model_y::before {
+    content: "Узнать цену";
+}
+
+.price_model_y:hover::before {
+    content: "от 5 200 000 рублей";
+}
+
+
+footer{
+    margin-top: auto;
+}
+.end{
+    text-decoration:none;
+    display: flex; 
+    justify-content: center;
+    font-size: large; 
+    text-transform: uppercase;
+    font-weight: bold;
+    z-index: 200;
+}
