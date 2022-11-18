@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+header{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.head{
+    height: 80px;
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex_left{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    font-size:x-large;
+}
+
+.logo{
+    margin-left: 30px;
+    width: 220px;
+}
+
+.pcs{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    color:rgba(120, 120, 120, 1);
+    margin-left: 30px;
+}
+
+.flex_right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color:rgba(120, 120, 120, 1);
+    width: inherit;
+}
+
+.registration{
+    margin-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(120, 120, 120, 1) !important;
+
+}
+
+.join{
+    margin-right: 30px;
+    color: rgba(26, 34, 107, 1) !important;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.flex_form{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: inherit;
+    flex-direction: column;
+}
+
+
+.form{
+    display: flex;
+    border: 1px solid white ;
+    width: 600px;
+    height: 380px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.join-form{
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    color: rgba(120, 120, 120, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
+.email-form-label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: rgba(120, 120, 120, 1);
+    font-size: 16px;
+    width: inherit;
+    margin-left: 7em;
+}
+.email_input{
+    color: rgba(120, 120, 120, 1);
+    width: 500px;
+    height: 50px;
+    font-size: 28px;
+    margin-bottom: 11px;
+    border: 1px solid rgba(120, 120, 120, 1);
+    font-weight: 700;
+    opacity: 0.5;
+    border: 2px solid rgba(120, 120, 120, 1);
+}
+
+.password-form-label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: rgba(120, 120, 120, 1);
+    font-size: 16px;
+    width: inherit;
+    margin-left: 7em;
+    font-weight: 700;
+}
+.password_input{
+    font-family: "Roboto", sans-serif;
+    color: rgba(120, 120, 120, 1);
+    width: 500px;
+    height: 50px;
+    font-size: 28px;
+    margin-bottom: 52px;
+    border: 1px solid rgba(120, 120, 120, 1);
+    opacity: 0.5;
+    border: 2px solid rgba(120, 120, 120, 1);
+    font-weight: 700;
+
+}
+
+.flex_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;    
+}
+
+.btn_form{
+    background-color: rgba(26, 34, 107, 1);
+    color: white;
+    width: 180px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px){
+
+    .head{
+        width: auto;
+    }
+    .logo{
+        width: 80px;
+        margin-left: 10px;
+    }
+
+    .flex_left{
+        width: max-content;
+    }
+    .pcs{
+        margin-left: 10px;
+    }
+    
+    .flex_right{
+        font-size: initial;
+    }
+    .registration{
+        margin-right: 10px;
+    }
+
+    .join{
+        margin-right: 10px; 
+    }
+
+    .form{
+        margin: 0 20px;
+        width: 87vw;
+        height: 80vw;
+    }
+
+    .join-form{
+        font-size: xxx-large;
+        margin: 10px 0;
+        font-size: 3em;
+    }
+    .email-form-label {
+        display: none;
+        justify-content: flex-start;
+    }
+    .password-form-label{
+        display: none;
+        justify-content: flex-start;
+    }
+
+    .email_input{
+        width: -webkit-fill-available;
+        margin: 0 20px 10px;
+        font-size: 27px;
+    }
+    .password_input{
+        width: -webkit-fill-available;
+        margin: 0 20px 10px;
+        font-size: 27px;
+    }
+}
