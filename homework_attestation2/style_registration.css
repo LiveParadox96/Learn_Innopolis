@@ -463,6 +463,7 @@ input[type='checkbox']:checked::after {
 
     .container{
         width: -webkit-fill-available;
+        min-width: 350px
     }
 
     .resume-label{
