@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Аттестация</title>
+</head>
+<body>
+    <header class="head">
+        <div class="flex-left" style="width: inherit; display: flex; align-items: center">
+        <logo>
+            <img src="./img/logo.png" alt="logotype" class="logo">
+        </logo>
+        <b class="pcs">PCS Frontend</b>
+        </div>
+        <div class="flex_right">
+            <a class="registration" href="./registration.html">Регистрация</a>
+            <a class="join" href="./index.html">Вход</a>
+        </div>
+    </header>
+    <main class="flex_form">
+        <form class="form" type="submit" id="submitBtn" onsubmit="return false">
+            <h1 class="join-form">Вход</h1>
+            <label class="email-form-label" style="margin-bottom: 5px;">Email</label>
+            
+            <input type="text" class="email_input" name="email" type="email" placeholder="Введите email">
+            <label class="password-form-label" style="margin-bottom: 5px;">Пароль</label>
+            <input type="text" class="password_input" name="email" type="email" placeholder="Введите пароль">
+            <div class="flex_btn">
+                <button class="btn_form">Войти</button>
+            </div>
+        </form>
+    </main>
+<script src="./script.js"></script>
+</body>
+</html>
